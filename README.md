@@ -1,2 +1,3 @@
 # gateio.api
-c# implementation for gate.io api
+Gate.io API 的C#实现
+
