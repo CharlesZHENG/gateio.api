@@ -19,7 +19,7 @@ namespace gateio.api
 
         static API()
         {
-            _httpClient.Timeout = TimeSpan.FromSeconds(10);
+            _httpClient.Timeout = TimeSpan.FromSeconds(100);
         }
 
         public static void SetKey(string key, string secret)
@@ -29,9 +29,9 @@ namespace gateio.api
         }
 
 
-        const string QUERY_URL = "https://data.gate.io/";
+        const string QUERY_URL = "https://data.gateio.io/";
 
-        const string TRADE_URL = "https://api.gate.io/";
+        const string TRADE_URL = "https://api.gateio.io/";
 
         const string PAIRS_URL = "api2/1/pairs";
         const string MARKET_INFO_URL = "api2/1/marketinfo";
