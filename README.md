@@ -1,18 +1,18 @@
 # gateio.api
 Gate.io API 的C#实现
 
-## 项目中引用 GateIO.API
-
-使用Nuget包管理器在项目中引用
-
-https://www.nuget.org/packages/gateio.api/1.0.0
-
 ## 使用 GateIO.API
 
 所有的方法在API类中，使用前先调用
 
 ```
-API.SetKey("","")
+   static void Main(string[] args)
+   {
+     API.SetKey(key,secret);
+     //var balance = API.GetBalancesAsync().GetAwaiter().GetResult();
+     var marketDeep= API.OrderBookAsync("iht","usdt").GetAwaiter().GetResult();     
+     Console.Read();
+   }
 ```
 
 设置密钥
